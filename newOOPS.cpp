@@ -5,18 +5,25 @@ using namespace std;
 
 
 class Student{
-    public: //access specifier
+    private: //access specifier
 
     // attributes
     int id;
     int age;
     string name;
     int nos;
+     float gpa ;
+    string gf;
 
     // behaviour / methods / functions
 
 
     // ctor: default ctor (constructor )
+
+   
+   
+
+    public:
 
     Student(){
         cout<<"Student default constructor called"<<endl;
@@ -31,13 +38,15 @@ class Student{
 
     // ctor: Parameterised constructor 
 
-    Student (int id, int age, string name, int nos )
+    Student (int id, int age, string name, int nos, float gpa , string gf )
     {
         cout<<"Student parameterised constructor called"<<endl;
         this->id= id;
         this->name= name;
         this->nos= nos;
         this->age= age;
+        this->gpa = gpa ;
+        this->gf= gf;
     }
 
     // copy constructor 
@@ -53,17 +62,49 @@ class Student{
     } //const means the source obj which is srcobj will not be changed that means the cource from which iam copying the datta is not changed and is always constant 
 
 
+// inheritence is  a way to create a class from existing class 
+// creating a child class forma parent class
+
+// is a relation b/w 2 things signifies inheritence in  cpp 
+
+// parent class contains all the common attributes of its child class and by this we make the concept of inheritence functional 
+
+
+
+
+
+
+
     void study(){
-        cout<<this->name<<"\t"<<"STUDING"<< endl;
+        cout<<this->name<<"\t"<<" is STUDING"<< endl;
     }
 
     void sleep(){
-        cout<<this->name<<"Sleeping"<< endl;
+        cout<<this->name<<" is Sleeping "<< endl;
 
     }
 
     void bunk(){
-        cout<<this->name<<"bunking"<<endl;
+        cout<<this->name<<" has been bunking the class "<<endl;
+    }
+
+
+    float getAge( int age ){
+        return age;
+    }
+
+
+    // we can make class in side it we can set all the variable to private and access the functions by creating new function 
+
+
+
+
+    // private:
+
+    private:
+    void gfChatting(){
+        cout<<this->name<<" is chatting with gf "<<endl;
+
     }
 
 };
@@ -94,7 +135,7 @@ int main(){
 
 // B.bunk();
 
-Student A(1,15,"Ranu",6);
+// Student A(1,15,"Ranu",6);
 // Student B(1,15,"RAhil",6);
 // Student C(1,15,"SONU",6);
 // Student D(1,15,"monu",6);
@@ -112,15 +153,26 @@ Student A(1,15,"Ranu",6);
 
 // dynamic allocation , or student pointer;
 
-Student *ptrA = new Student (1,14,"Babban", 7);
-cout<< ptrA->name <<endl;
-cout<< ptrA->age <<endl;
+// Student *ptrA = new Student (1,14,"Babban", 7);
+// cout<< ptrA->name <<endl;
+// cout<< ptrA->age <<endl;
 
 // here destructor will not be called automatucally as in cpp we have to delete it manually
 // whenevr we allocate memory dynamically 
 
 
-delete ptrA;
+// delete ptrA;
+
+Student A(1,12,"Ranu",5,7.8,"Menu");
+
+// A.gfChatting(); now we cannot acces this function as its access specifier is set on private 
+
+
+A.sleep();
+A.getAge(10);
+
+
+
 
 return 0;
 }
