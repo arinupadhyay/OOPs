@@ -2,36 +2,78 @@
 
 using namespace std;
 
-class Add{
+// class Add{
+//     public:
+//     // adding 2 no's
+//     int sum(int x, int y){
+//         return x+y;
+//     }
+
+//     // adding 3 no's
+//     int sum(int x,int y, int z){
+//         return x+y+z;
+//     }
+
+//     // double add
+//     double sum(double x,double y, double z){
+//         return x+y+z;
+//     }
+// };
+
+
+class Complex{
     public:
-    // adding 2 no's
-    int sum(int x, int y){
-        return x+y;
+    int real;
+    int img;
+    Complex( ){
+        real=img=-1;
     }
 
-    // adding 3 no's
-    int sum(int x,int y, int z){
-        return x+y+z;
+    Complex(int r, int i):real(r), img(i){};
+
+    void print(){
+        printf("[%d + i%d]", this->real,this->img);
     }
 
-    // double add
-    double sum(double x,double y, double z){
-        return x+y+z;
+    // syntax for operator 
+    // return type operator <operator> (arguments ){
+    // mlkdm
+    // return<>
+    // }
+
+    Complex operator+(const Complex &B)
+    {
+        // this -> A instance 
+        Complex temp;
+        temp.real = this->real; + B.real;
+        temp.img = this->img; + B.img;
+        return temp;
+
     }
+    
 };
 
 
 
 
-
+ 
 int main(){
 
-    Add opt;
+    // Add opt;
 
-    cout<<opt.sum(10,20)<<endl;;
-    cout<<opt.sum(20,10,30)<<endl;;
-    cout<<opt.sum(10.2,49.5,44.4)<<endl;;
+    // cout<<opt.sum(10,20)<<endl;;
+    // cout<<opt.sum(20,10,30)<<endl;;
+    // cout<<opt.sum(10.2,49.5,44.4)<<endl;;
 
+    Complex A(2,5);
+    A.print();
+    Complex B(2,3);
+    B.print();
+
+    Complex C = A+B;
+    C.print();
+
+   
 
     return 0;
 }
