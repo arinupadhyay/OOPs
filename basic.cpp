@@ -3,7 +3,7 @@ using namespace std;
 
 class Voter {
 public:
-    int voterID;
+    int voterid;
     string name;
 };
 
@@ -11,7 +11,7 @@ int main() {
 
     Voter v1;
 
-    v1.voterID = 101;
+    v1.voterid = 101;
     v1.name = "Rahul";
 
     cout << "Voter ID: " << v1.voterid << endl;
