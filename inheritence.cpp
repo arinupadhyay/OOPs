@@ -27,7 +27,7 @@ public:
 public:
     void start_engine()
     {
-        cout << "engine is strting " << name << " " << endl;
+        cout << "engine isstrting " << name << " " << endl;
     }
 
     void stop_engine()
