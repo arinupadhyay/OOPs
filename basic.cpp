@@ -14,8 +14,8 @@ int main() {
     v1.voterid = 101;
     v1.name = "Rahul";
 
-    cout << "Voter ID: " << v1.voterid << endl;
-    cout << "Name: " << v1.name << endl;
+    cout << "Voterrrr  ID: " << v1.voterid << endl;
+    cout << "Namerrrr:  " << v1.name << endl;
 
     return 0;
 }
