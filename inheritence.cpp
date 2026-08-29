@@ -15,10 +15,32 @@ public:
         salary = s;
     }
 
+<<<<<<< HEAD
     void displayEmployeeDetails() {
         cout << "Employee Name : " << name << endl;
         cout << "Employee ID   : " << employeeID << endl;
         cout << "Salary        : " << salary << endl;
+=======
+    Vehicle(string _name, string _model, int _noOfTyres)
+    {
+
+        cout << "I am inside a car ctor" << endl;
+        this->name = _name;
+        this->model = _model;
+        this->noOfTyres = _noOfTyres;
+    }
+
+public:
+    void start_engine()
+    {
+        cout << "engine isstrting " << name << " " << endl;
+    }
+
+    void stop_engine()
+    {
+
+        cout << "engine is stopping" << name << " " << endl;
+>>>>>>> 11b6f536dddd578041d7c1bd630d664c6328d409
     }
 };
 
