@@ -18,7 +18,7 @@ class BankAccount{
     }
 
          void deposit(double amount){
-        if(amount>0){
+        if(amount > 0){
             initialBalance= initialBalance+amount;
         }
     }
@@ -74,7 +74,7 @@ SavingsAccount(string _accountNumber, string _accountHolderName, float _initialB
 void calculateIntrest(){
     double interest = initialBalance * (intrestRate / 100);
         initialBalance += interest;
-        cout << "Interest added: " << interest << " | New balance: " << initialBalance << endl;
+        cout << "Interest addedddddd!: " << interest << " | New balanceeeeeeeee!: " << initialBalance << endl;
 
 }
 
