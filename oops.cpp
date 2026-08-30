@@ -86,7 +86,7 @@ Teacher obj3;
 Teacher obj4;
 Teacher obj5;
 
-obj1.name= "Arin";
+obj1.name= "Arinnnnn Upadhyay";
 obj1.subject = "Maths";
 obj1.salary= 100000.0;
 // obj1.dept= "Computer Science";
