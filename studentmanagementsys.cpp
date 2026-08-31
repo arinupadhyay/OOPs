@@ -44,13 +44,13 @@ int main () {
     int rno;
     int marks;
 
-    cout<<"enter name:\t"<<endl;
+    cout<<"enter name: \t"<<endl;
     cin>>name;
 
-    cout<<"Enter roll no\t"<<endl;
+    cout<<"Enter roll no: \t"<<endl;
     cin>>rno;
 
-    cout<<"enter marks:\t"<<endl;
+    cout<<"enter marks: \t"<<endl;
     cin>>marks;
 
     Student s1(name,rno,marks);
