@@ -10,9 +10,9 @@ class Student {
 
     public:
     void displayStudents(){
-        cout<<"Name: "<< name <<endl;
-        cout<<"Roll No"<< rno << endl;
-        cout<< "Marks" << marks << endl;
+        cout<<"Name : "<< name <<endl;
+        cout<<"Roll No :"<< rno << endl;
+        cout<< "Marks :" << marks << endl;
     }
 
      void calculateGrade() {
