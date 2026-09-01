@@ -4,7 +4,7 @@
 
 The repository contains simple examples and implementations designed to make OOP concepts easier to understand through practical coding.
 
-## 📚 Concepts Covered
+## 📚   Concepts Covered!
 
 * Classes and Objects
 * Encapsulation
